@@ -1,0 +1,91 @@
+/* general page style */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #eeeeee;
+    color:#333333;
+}
+
+/* header */
+header {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* navigation */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* main content */
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* sections */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* headings */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    color: #d00000;
+}
+
+/* paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* list */
+ul {
+    line-height: 2;
+}
+
+/* footer */
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.about-page {
+    font-family: 'Oswald', sans-serif;
+    background-color: #dddddd;
+}
+
+.about-page h1 {
+    color: #cc0000;
+    text-align: center;
+}
+
+.about-page h2 {
+    color: #222222;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 5px;
+}
+
+.about-page img {
+    border: 4px solid #222222;
+}
