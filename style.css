@@ -2,10 +2,13 @@
 /* General page styling */
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
     margin: 0;
+    color: #222222;
     background-color: #eeeeee;
-    color: #333333;
+    text-align: left;
+    line-height: 1.6;
 }
 
 
@@ -31,15 +34,40 @@ nav {
 
 nav a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     margin: 15px;
 }
 
 /* Hover selector */
 
 nav a:hover {
-    color: red;
+    color: white;
     text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Keyboard accessibility */
+
+nav a:focus {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+
+/* Skip link */
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.skip-link:focus {
+    left: 10px;
 }
 
 
@@ -62,14 +90,14 @@ section {
 }
 
 
-/* Welcome section - box model */
+/* Welcome section - CSS box model */
 
 #welcome {
     width: 100%;
     height: 180px;
     padding: 20px;
     margin-bottom: 25px;
-    border: 2px solid #cc0000;
+    border: 2px solid #222222;
     box-sizing: border-box;
 }
 
@@ -92,7 +120,7 @@ section {
 /* Headings */
 
 h2 {
-    color: #cc0000;
+    color: #b00000;
 }
 
 
@@ -113,7 +141,7 @@ ul {
 /* Contact section */
 
 #contact {
-    border: 2px solid #cc0000;
+    border: 2px solid #222222;
 }
 
 
@@ -130,26 +158,25 @@ footer {
 /* About page */
 
 .about-page {
-    font-family: 'Oswald', sans-serif;
     background-color: #dddddd;
 }
 
 .about-page h1 {
-    color: #cc0000;
+    color: white;
 }
 
 .about-page h2 {
     color: #222222;
-    border-bottom: 2px solid #cc0000;
+    border-bottom: 2px solid #222222;
     padding-bottom: 5px;
 }
 
 
 /* Background image on homepage */
 
-body:not(.about-page) {
+.home-page {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1600&auto=format&fit=crop");
 
     background-size: cover;
@@ -174,6 +201,10 @@ body:not(.about-page) {
     .car-section img {
         width: 100%;
         height: auto;
+    }
+
+    header h1 {
+        font-size: 28px;
     }
 
 }
