@@ -60,23 +60,6 @@ nav a:focus {
 }
 
 
-/* Skip link */
-
-.skip-link {
-    position: absolute;
-    left: -1000px;
-    top: 10px;
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border: 2px solid black;
-}
-
-.skip-link:focus {
-    left: 10px;
-}
-
-
 /* Main content */
 
 main {
